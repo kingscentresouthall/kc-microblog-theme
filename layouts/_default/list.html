@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main id="main-content">
+  <section class="page-hero"><p class="eyebrow">{{ .Title }}</p><h1>{{ .Title }}</h1>{{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}</section>
+  <section class="section mist"><div class="news-grid">
+    {{ range .Pages }}{{ partial "news-card.html" . }}{{ else }}<p>No updates have been published yet.</p>{{ end }}
+  </div></section>
+</main>
+{{ end }}

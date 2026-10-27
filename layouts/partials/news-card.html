@@ -1,0 +1,6 @@
+<article class="news-card">
+  <p class="eyebrow"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p>{{ with .Summary }}{{ . | plainify | truncate 180 }}{{ else }}Read the latest update from The Kings Centre Southall.{{ end }}</p>
+  <a class="text-link" href="{{ .RelPermalink }}">Read the update →</a>
+</article>

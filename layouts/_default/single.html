@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main id="main-content">
+  {{ if eq .Type "post" }}
+    <article class="news-article section cream">
+      <p class="eyebrow">Kings Centre news</p>
+      <h1>{{ .Title }}</h1>
+      <p class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+      <div class="post-content">{{ .Content }}</div>
+      <p><a class="text-link" href="/news/">← All news</a></p>
+    </article>
+  {{ else }}
+    {{ .Content }}
+  {{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,20 @@
+{
+  "title": "Kings Centre Southall",
+  "version": "0.1.0",
+  "description": "The official Micro.blog theme for The Kings Centre Southall.",
+  "includes": [
+    "kc-head.html"
+  ],
+  "fields": [
+    {
+      "field": "params.main_site_url",
+      "label": "Main website URL",
+      "type": "string"
+    },
+    {
+      "field": "params.publisher_url",
+      "label": "Colleague publishing URL",
+      "type": "string"
+    }
+  ]
+}

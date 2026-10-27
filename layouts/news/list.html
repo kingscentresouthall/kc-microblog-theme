@@ -1,0 +1,12 @@
+{{ define "title" }}News{{ end }}
+{{ define "main" }}
+<main id="main-content">
+  <section class="page-hero"><p class="eyebrow">News</p><h1>What is happening at The Kings Centre.</h1><p class="lede">Updates from our community work, youth projects, football academy, training and organisational life.</p></section>
+  <section class="section mist"><div class="section-head"><div><p class="eyebrow">Latest updates</p><h2>Recent stories from our work.</h2></div><p>News and stories now live alongside the rest of the Kings Centre website.</p></div>
+    <div class="news-grid">
+      {{ range where .Site.RegularPages "Type" "post" }}{{ partial "news-card.html" . }}{{ else }}<p>No updates have been published yet.</p>{{ end }}
+    </div>
+  </section>
+  <section class="cta"><p class="eyebrow">Have an update to share?</p><h2>Tell the team what is happening.</h2><p>Colleagues can use our simple publishing tool. Everyone else can send the key details and any approved photographs to the Centre team.</p><div class="contact-actions"><a class="button light" href="{{ .Site.Params.publisher_url }}">Publishing for colleagues →</a><a class="text-link" href="mailto:info@kingscentresouthall.org.uk?subject=News%20update">Email a news update</a></div></section>
+</main>
+{{ end }}

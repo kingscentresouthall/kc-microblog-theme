@@ -1,0 +1,9 @@
+name = "Kings Centre Southall"
+license = "MIT"
+description = "Accessible public website and news theme for The Kings Centre Southall"
+homepage = "https://kingscentresouthall.org.uk/"
+min_version = "0.91.0"
+
+[author]
+  name = "The Kings Centre Southall"
+  homepage = "https://kingscentresouthall.org.uk/"

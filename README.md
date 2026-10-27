@@ -36,4 +36,3 @@ node scripts/validate-theme.mjs
 5. Only after approval, apply the tested release to production.
 
 The live `kingscentresouthall.org.uk` domain must not be moved during staging.
-
