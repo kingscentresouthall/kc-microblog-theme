@@ -1,2 +1,15 @@
+{{- $socialspecAbout := `---
+summary: "The Kings Centre Southall is a Southall-based charity helping people and organisations learn across cultural, religious and generational differences."
+---
+
+We are a Southall-based charity helping people and organisations learn across cultural, religious and generational differences—and turn that learning into practical local action.
+
+We bring people together through youth work, community programmes and practical training. Everything we do is shaped by Southall and the people who live here.
+` -}}
+{{- $socialspecAboutFile := resources.FromString ".well-known/about.md" $socialspecAbout -}}
+{{- $socialspecAboutPublished := $socialspecAboutFile.RelPermalink -}}
+{{- $socialspecContact := "BEGIN:VCARD\r\nVERSION:4.0\r\nFN:The Kings Centre Southall\r\nORG:The Kings Centre Southall\r\nKIND:org\r\nEMAIL;TYPE=work:news@kingscentresouthall.org.uk\r\nURL:https://kingscentresouthall.org.uk/\r\nEND:VCARD\r\n" -}}
+{{- $socialspecContactFile := resources.FromString ".well-known/contact.vcf" $socialspecContact -}}
+{{- $socialspecContactPublished := $socialspecContactFile.RelPermalink -}}
 <meta name="theme-color" content="#1a6261">
 <meta property="og:site_name" content="The Kings Centre Southall">
