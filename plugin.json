@@ -1,8 +1,10 @@
 {
   "title": "Kings Centre Southall",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The official Micro.blog theme for The Kings Centre Southall.",
   "includes": [
+    "/css/kc-site.css",
+    "/js/kc-site.js",
     "kc-head.html"
   ],
   "fields": [
