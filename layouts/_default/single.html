@@ -8,6 +8,8 @@
       <div class="post-content">{{ .Content }}</div>
       <p><a class="text-link" href="/news/">← All news</a></p>
     </article>
+  {{ else if eq .RelPermalink "/about/" }}
+    {{ partial "about-content.html" . }}
   {{ else }}
     {{ .Content }}
   {{ end }}
