@@ -1,0 +1,17 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Kings Centre Southall news migration",
+  "home_page_url": "https://kcteam-preview.micro.blog/",
+  "feed_url": "https://raw.githubusercontent.com/kingscentresouthall/kc-microblog-theme/main/migration-feed.json",
+  "items": [
+    {
+      "id": "kc-news-migration-welcome-2026-10-22",
+      "title": "Welcome to Kings Centre Southall News",
+      "content_html": "<p>Welcome to our new space for stories and updates from Kings Centre Southall.</p><p>We’ll use this site to share news from our community, youth work, training, football academy and wider organisation.</p><p>This is an early preview while we test a simple way for our team to publish updates. For current information about our services, safeguarding and how to contact us, visit <a href=\"https://kingscentresouthall.org.uk/\">Kings Centre Southall</a>.</p>",
+      "date_published": "2026-10-22T17:36:00Z",
+      "url": "https://kcteam-preview.micro.blog/2026/10/22/welcome-to-kings-centre-southall/",
+      "tags": ["Community"]
+    }
+  ]
+}
+
