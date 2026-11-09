@@ -45,3 +45,16 @@ const rewriteNewsLinks = () => {
 
 rewriteNewsLinks();
 new MutationObserver(rewriteNewsLinks).observe(document.body, { childList: true, subtree: true });
+
+// Micro.blog hosts uploaded videos as adaptive HLS streams.
+// Use native HLS where available and hls.js in other modern browsers.
+document.querySelectorAll('video[data-hls-source]').forEach((video) => {
+  const source = video.dataset.hlsSource;
+  if (!source || video.canPlayType('application/vnd.apple.mpegurl')) return;
+
+  if (window.Hls?.isSupported()) {
+    const player = new window.Hls();
+    player.loadSource(source);
+    player.attachMedia(video);
+  }
+});
